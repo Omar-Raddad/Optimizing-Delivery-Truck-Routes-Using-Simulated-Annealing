@@ -1,5 +1,14 @@
+
+
+import ui.*;
+
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SwingUtilities.invokeLater(() -> {
+            MainUi gui = new MainUi();
+            gui.setVisible(true);
+        });
     }
 }
